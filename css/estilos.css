@@ -6,7 +6,7 @@ padding: 0;
 box-sizing: border-box;
 }
 body{
-    background: #eaebef;
+    background: #eeefea;
     font-family: 'Poppins', sans-serif;
      
     
@@ -17,22 +17,23 @@ article{
     align-items: center;
     justify-content: center;
     min-height: 50vh;
-    background:  #eaebef;
-        
+   
 }
+
 .iconos{
    width: 200px;
 }
-.titulos {
-   margin-top: 50px;
+.titulos{
+ padding-top: 100px;
    text-align: center;
-   font-size: 30px;
+   font-size: 40px;
    font-family: 'Poppins',sans-serif;
-   margin-bottom: 0%;
+   margin-bottom: 50px;
    color: #1f283a;
   
 }
 
+/*cards section quienes somos*/
 .card-somos{
     width: 90%;
     margin: 0 auto;
@@ -42,39 +43,40 @@ article{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-
+    gap: 3.5em;
+    flex-wrap: wrap;
+ }
+.container-somos{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    flex-basis: 280px;
+    max-width: 100%;
+    flex-grow: 1 ;
 }
-/*.card-somos{
-    background: url(../img/fondo-somos.jpg);
-    background-position: center;
-    background-attachment: contain;
-    background-size: cover;
-    display: flex;
-    flex-flow: column nowrap;
+.card_title{
+    padding-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
 }
-
-/*.flex-container {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   margin: 100px 20px 0px 200px;
-  
+.card_content{
+    width: 90%;
+    margin: 50px;
+}
+.card_picture{
+    width: 90%;
+    margin: 0 auto;
    
 }
+.card_img{
+    width: 100% ;
+}
 
-.flex-container div{
-    width: 100%;
-    height: 100%;
-    margin-left: 10px;
-    margin-right: 80px;
-    margin-bottom: 100px;
-    text-align: left;
-    font-size: 30px;
-    font-family: 'Caveat', cursive ;
-    gap: 10px;
-
-}*/
-
+.destinos{
+    background-color: rgb(247, 245, 235);
+    padding-bottom: 100px;
+}
+/* Cards section desrtinos*/
 
 .card{
     position:relative;
@@ -150,6 +152,8 @@ letter-spacing: 1px;
 .card:hover .back{
 transform: perspective(600px) rotateY(360deg);
 }
+
+/*menu*/
 .menu-logo{
     font-size: 30px;
 } 
@@ -243,6 +247,61 @@ height: 60px;
     width: 36px;
 
 }
+ /*PIE DE PAGINA*/
+.pie-pagina{
+    width: 100%;
+    background-color:  #1a202c ;
+   }
+   .pie-pagina .grupo-1{
+       width: 100%;
+       max-width: 1200px;
+       margin: auto;
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       gap: 70px;
+       padding: 45px 0px;
+   }
+   .pie-pagina .grupo-1 .box-logo{
+       color: #f3f3f3;
+       width: 100%;
+       height: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   .pie-pagina .grupo-1 .box h2{
+        color: #fff;
+        margin-bottom: 25px;
+        font-size: 20px;
+   }
+   .pie-pagina .grupo-1 .box p{
+         color: #efefef;
+         margin-bottom: 10px;
+   }
+   .pie-pagina .grupo-1 .red-social a{
+       display: inline-block;
+       text-decoration: none;
+       width: 45px;
+       height: 45px;
+       line-height: 45px;
+       color:#fff;
+       margin-right: 10px;
+       background-color: rgb(41, 60, 77) ;
+       text-align: center;
+       transition: all 300ms ease;
+   }
+   .pie-pagina .grupo-1 .red-social a:hover{
+       color: rgb(42, 152, 216);
+   }
+   .pie-pagina .grupo-2{
+       background-color: rgb(41, 60, 77) ;
+       padding: 15px 10px;
+       text-align: center;
+       color: #fff;
+   }
+   .pie-pagina .grupo-2 small{
+       font-size: 15px;
+   }
 
 @media (max-width:800px){
     .menu-hamburger{
@@ -265,7 +324,7 @@ height: 60px;
     }
 
     .menu-links{
-        position: fixed;
+        position:fixed;
         max-width: 400px;
         width: 100%;
         top: 60px;
@@ -276,6 +335,7 @@ height: 60px;
         display: grid;
         grid-auto-rows: max-content;
         transform: translateX(100%);
+        z-index: 20;
     }
 
     .menu-links--show{
@@ -309,6 +369,14 @@ height: 60px;
         margin-left: auto;
         border-left: 1px solid rgb(41, 60, 77);
     }
+
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        padding: 35px 0px;
+    }
+
 }
  
 
@@ -330,19 +398,22 @@ animation: slide 2s;
     width: 100%;
     height: 100vh;
     background-color: rgba(0,0,0,0.5);
+    
 }
 
 .principal{
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    position: absolute;
+    position: relative;
     letter-spacing: 5px;
     text-align: center;
+    
 }
 .principal h1{
     font-size:70px;
     margin-bottom: 20px;
+    
 }
 
 .principal p{
