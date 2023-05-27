@@ -1,6 +1,6 @@
 let cad=`<nav class="menu">
 <section class="menu-container">
-    <h1 class="menu-logo">Turismo x el mundo</h1>
+  <a href="index.html" class="logo"> <h1 class="menu-logo">Turismo x el mundo</h1></a>
     
 
     <ul class="menu-links">
@@ -64,10 +64,10 @@ let footer=`<div class="pie-pagina">
 <div class="box">
     <h2>SEGUINOS EN</h2>
     <div class="red-social">
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-instagram"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <a href="#" class="fa fa-youtube"></a>
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        <a href="https://twitter.com/?lang=es" class="fa fa-twitter"></a>
+        <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
 
     </div>
 </div>
