@@ -452,3 +452,25 @@ animation: slide 2s;
         background-image: url('../img/image5.jpg');
     }
 }
+
+form{
+    padding: 20px;
+}
+.field{
+    border: solid 3px#644f4f;
+    padding: 10px;
+    border-radius: 10px;
+ 
+}
+.btn{
+    border-radius: 10px;
+    padding: 20px 15px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color:rgb(41, 57, 103)
+
+
+
+
+}
