@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abel&family=Alkatra&family=Caveat:wght@600&family=Poppins:wght@300;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <title>HOTELES</title>
+
+   
+</head>
+
+<body>
+    <div class="fondo">
+
+       
+        <a href="index.html"><h2> Home</h2></a>
+        
+
+        <div id="app">
+
+            <div class="titulos">
+                <h1>HOTELES</h1>
+            </div>
+
+            <article>
+                <div class="cards" v-for="elemento in hotels">
+                    <div class="face front">
+                        <img width="100" v-bind:src="elemento.photo1">
+                        <img width="100" v-bind:src="elemento.photo2">
+                        <img width="100" v-bind:src="elemento.photo3">
+                        <img width="100" v-bind:src="elemento.photo4">
+
+
+                        <h3>{{elemento.continent_name}} - {{elemento.country}} </br> {{elemento.city}} </h3>
+
+                    </div>
+                    <div class="face back">
+                        <h3>{{elemento.continent_name}} - {{elemento.country}} </br> {{elemento.city}} </h3>
+                        
+                        
+                        <p>Estado: {{elemento.state}}</p>
+                        <p>Cantidad de visitas: {{elemento.number_of_reviews}}</p>
+                        <p>Dirección: {{elemento.addressline1}}</p>
+                    
+                        <div class="link">
+
+                            <a href="elemento.url"> Link Hotel: {{elemento.url}}</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/hoteles.js"></script>
+</body>
