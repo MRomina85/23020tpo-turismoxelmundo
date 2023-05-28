@@ -3,7 +3,8 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
-            //message: 'Hello Vue!',
+            
+            message: 'Hello !',
 
             url: "http://demo0522475.mockable.io/hoteles", //json creado por el grupo en base a otros que encontramos
             hotelesALL: [],
