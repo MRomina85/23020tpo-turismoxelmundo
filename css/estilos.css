@@ -499,7 +499,7 @@ animation: slide 2s;
     100%{
         background-image: url('../img/image5.jpg');
     }
-}}
+}
 
 
 form{
@@ -526,5 +526,86 @@ form{
 
 
 
+}
+
+/*HOTELES*/
+
+.fondo{background-image:url('../img/image4.jpg') } 
+
+.cards{
+    position:relative;
+    width: 300px ;
+    height: 350px;
+    margin: 30px;
+   
+}
+.cards .face{
+    position: absolute;
+    width: 100% ;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition:  .5s;
+}
+.cards .front{
+    transform: perspective(600px) rotate(0deg);
+    box-shadow: 0 5px 10px #000;
+
+}
+.cards .front img{
+    position: relative;
+    margin-top: 3%;
+    margin-left: 5%;
+    width: 43%;
+    height:38%;
+    object-fit: cover;
+}
+
+.cards .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 25px;
+    color:#eaebef;
+    background:rgb(41, 60, 77); ;
+    text-align: center;
+}
+
+.cards .back{
+      transform: perspective(600px) rotateY(180deg) ;
+      background: rgb(3, 35, 54);
+      padding: 15px;
+      color: #f3f3f3;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      line-height: 20px;
+      box-shadow: 0, 5px 10px #000;
+}
+
+.cards .back .link{
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+}
+.cards .back .link a{
+    color: #f3f3f3;
+}
+.cards .back h3{
+    font-size: 20px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+.cards .back p{
+font-size: small;
+letter-spacing: 1px;
+}
+.cards:hover .front{
+    transform: perspective(600px) rotateY(180deg) ;
+}
+.cards:hover .back{
+transform: perspective(600px) rotateY(360deg);
 }
 
