@@ -6,7 +6,7 @@ createApp({
             
             message: 'Hello !',
 
-            url: "http://demo0522475.mockable.io/hoteles", //json creado por el grupo en base a otros que encontramos
+            url: "https://demo0522475.mockable.io/hoteles", //json creado por el grupo en base a otros que encontramos
             hotelesALL: [],
             hotels: [],
             countryALL: [],
