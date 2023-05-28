@@ -28,8 +28,8 @@ article{
    text-align: center;
    font-size: 40px;
    font-family: 'Poppins',sans-serif;
-   margin-bottom: 50px;
    color: #1f283a;
+   flex-wrap: wrap;
 }
 
 /*cards section quienes somos*/
@@ -159,7 +159,7 @@ transform: perspective(600px) rotateY(360deg);
 .menu{
 background-color: #1a202c;
 color: #fff;
-height: 60px;
+height: 70px;
 
 }
 .menu-container{
@@ -305,8 +305,50 @@ height: 60px;
    .pie-pagina .grupo-2 small{
        font-size: 15px;
    }
-
+@media (max-width:599px){
+    .titulos{
+        font-size:medium;
+    }
+    .card-somos{
+        min-height: auto;
+     }
+     .destinos{
+        padding-bottom: 20px;
+    }
+    
+   }
+@media (min-width:600px) and (max-width:768px){
+    
+    .titulos{
+        font-size:large;
+      
+    }
+    .menu-logo{
+        font-size: 30px;
+    }
+    .destinos{
+        padding-bottom: 20px;
+    }
+    .card-somos{
+       min-height: auto;
+    }
+    
+}
+@media(min-width:801) and (max-width:1200){
+    .card-somos{
+        min-height: auto;
+     }
+     .destinos{
+        padding-bottom: 20px;
+    }
+}
 @media (max-width:800px){
+    .card-somos{
+        min-height: auto;
+     }
+     .destinos{
+        padding-bottom: 20px;
+    } 
     .menu-hamburger{
         display: flex;
     }
