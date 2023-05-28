@@ -309,6 +309,9 @@ height: 70px;
     .titulos{
         font-size:medium;
     }
+    .menu-logo{
+        font-size: 20px;
+    }
     .card-somos{
         min-height: auto;
      }
